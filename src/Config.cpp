@@ -26,7 +26,7 @@
 #endif
 #include "Config.h"
 
-const unsigned int Config::TIME_SLOT = 1000;
+const unsigned int Config::TIME_SLOT = 100;
 
 Config::Config(int argc, char **argv)
 {
