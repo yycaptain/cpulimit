@@ -192,7 +192,7 @@ void ProcessHandler::Suspend()
     DWORD error = 0;
     if(this->m_extSuspendProcess && this->m_cfg->GetNtDll())
     {
-        this->m_extSuspendProcess(this->m_Handle);
+       error = this->m_extSuspendProcess(this->m_Handle);
         if(error)
         {
             SuspendResumeIt(this->m_Id, 1);
