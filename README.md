@@ -23,6 +23,8 @@ This package is compatible with the GNU autotools.
 
     $ `git submodule update`
 
+    $ ` g++ .\src\cpulimit.cpp  .\src\Config.cpp .\src\MyExceptionHandler.cpp  .\src\ProcessHandler.cpp  .\vendor\ermshiperete\getopt\getoptLib\getopt.c -o limit.exe -I .\src\ -I .\vendor\ermshiperete\getopt\getoptLib\`
+
     It's configure to build with "Microsoft Visual C++ 2008":
 
       - executing `cpulimit.vcproj` file.
